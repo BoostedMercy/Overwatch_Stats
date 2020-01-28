@@ -2,7 +2,6 @@ import requests
 import json
 
 # Written by Matt
-print("Testing the commits")
 
 
 def getAll(plt, svr, tag):  # Grabs all possible stats about a player (Large file size)
@@ -85,7 +84,7 @@ def SaveData(data):
 
 
 # For testing and is also an example of how to use functions in cmdline.
-goodTag = False
+"""goodTag = False
 while not goodTag:
     inputTag = input("Input your battletag: ")
     temp = inputTag.split("#")
@@ -94,6 +93,9 @@ while not goodTag:
         goodTag = True
     except IndexError:
         print("Invalid Format")
+        
 
 SaveData(getAll("pc", "eu", linkTag))  # Saves the data from the getAll command to the json file.
 leaderBoard()  # Displays leaderboard of saved users, ordered by SR
+"""
+

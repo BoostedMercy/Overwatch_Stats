@@ -48,10 +48,11 @@ def leaderBoard():
                 completed = False
                 for item in range(len(statBoard)):
                     try:
+                        plr = str(player)
                         if statBoard[item][0] == z[str(player)]["name"]:
                             statBoard.pop(item)
                         elif statBoard[item][1] < z[str(player)]["rating"] and not completed:
-                            statBoard.insert(z[[str(player)]["name"], z[str(player)]["rating"]], item)
+                            statBoard.insert([z[plr]["name"], z[plr]["rating"]], item)
                             completed = True
                     except KeyError:
                         pass

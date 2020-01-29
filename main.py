@@ -9,3 +9,5 @@ if LoginAccess:
     print(Stats["name"])
 else:
     print("Access denied etc.")
+
+print("Hello cunt")

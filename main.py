@@ -1,13 +1,8 @@
-import request, login
+import request as r
+import login as l
 
-print("---Main program---")
+tag = l.run()
+print(tag)
+test = r.getAll("pc", "eu", tag)
 
-LoginAccess = login.mainLogin()
-
-if LoginAccess:
-    Stats = (request.getAll("pc", "eu", "PocketMercy-2405"))
-    print(Stats["name"])
-else:
-    print("Access denied etc.")
-
-print("Hello cunt")
+print(test)
